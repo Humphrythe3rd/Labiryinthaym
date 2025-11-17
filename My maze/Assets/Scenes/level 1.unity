@@ -3350,8 +3350,8 @@ Transform:
   m_GameObject: {fileID: 219001338}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.8372, y: 0.84749, z: 0}
-  m_LocalScale: {x: 23.306929, y: 2.8691494, z: 1}
+  m_LocalPosition: {x: -5.8372, y: 0.84487, z: 0}
+  m_LocalScale: {x: 23.306929, y: 2.8744, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 883943921}
@@ -9083,7 +9083,7 @@ Transform:
   m_GameObject: {fileID: 615115171}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -68.9, y: 4.8, z: 0}
+  m_LocalPosition: {x: -85.12, y: 5.1, z: 0}
   m_LocalScale: {x: 9.229332, y: 8.133263, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10635,6 +10635,7 @@ GameObject:
   - component: {fileID: 718098659}
   - component: {fileID: 718098658}
   - component: {fileID: 718098657}
+  - component: {fileID: 718098662}
   m_Layer: 0
   m_Name: enemy
   m_TagString: Untagged
@@ -10655,8 +10656,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"nest":{"source":"Macro","macro":null,"embed":null}}'
-    _objectReferences: []
+    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
+    _objectReferences:
+    - {fileID: 11400000, guid: a0814889a9d30d14da438ff0f2b7e8cf, type: 2}
 --- !u!114 &718098658
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10670,7 +10672,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[],"$version":"A"},"$version":"A"}}'
+    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"speed","value":{"$content":5.0,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"jump","value":{"$content":10.0,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences: []
 --- !u!61 &718098659
 BoxCollider2D:
@@ -10808,6 +10812,43 @@ Transform:
   - {fileID: 366195509}
   m_Father: {fileID: 934456164}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!70 &718098662
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 718098656}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 1, y: 1}
+  m_Direction: 0
 --- !u!1 &727998167
 GameObject:
   m_ObjectHideFlags: 0
@@ -117786,7 +117827,7 @@ Transform:
   m_GameObject: {fileID: 1959284189}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -68.7, y: 4.8694, z: 0}
+  m_LocalPosition: {x: -80.9, y: 5.53, z: 0}
   m_LocalScale: {x: 9.229332, y: 8.337407, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
